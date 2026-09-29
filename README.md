@@ -10,8 +10,8 @@ Server setup (Ubuntu/Debian with mumble-server, do once)
 
 1. SSH into the server.
 2. sudo apt install -y git
-3. git clone https://github.com/YOUR-NAME/wardogs-command-net
-4. sudo SQUADS=4 bash wardogs-command-net/server/install.sh (SQUADS is the max number of squads, 0 for no limit)
+3. git clone https://github.com/notsneakybeaky/wardogs-command-net
+4. sudo SQUADS=[enter max channel amount] bash wardogs-command-net/server/install.sh (SQUADS is the max number of squads, 0 for no limit)
 5. Mumble restarts once, anyone connected gets kicked for a second.
 6. Check it's running: systemctl status squad-bot
 7. Watch it live: journalctl -u squad-bot -f
