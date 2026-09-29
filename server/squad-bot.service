@@ -1,0 +1,14 @@
+[Unit]
+Description=Mumble squad leader bot
+After=mumble-server.service
+Wants=mumble-server.service
+
+[Service]
+EnvironmentFile=/etc/squad-bot.env
+ExecStart=/usr/bin/python3 /opt/squad-bot/squad_leader_bot.py
+Restart=always
+RestartSec=5
+DynamicUser=yes
+
+[Install]
+WantedBy=multi-user.target
